@@ -52,9 +52,9 @@ export default function FormRegistration(props) {
             request(option).then (() => {
                 requestSignIn(values)
             }).catch(error => {
-                console.log(error.toJSON())
+                console.log(error.response)
                 setImgLoading(false)
-                alert(`Ошибка ${error.toJSON().status}`)
+                alert(error.response.data.message)
             })
         } else {
             alert(`Не введены ${RESPONSIBLE_OFFICER_COPY[RESPONSIBLE_OFFICER_TYPES.EMAIL]}, ${RESPONSIBLE_OFFICER_COPY[RESPONSIBLE_OFFICER_TYPES.PASSWORD]}, ${RESPONSIBLE_OFFICER_COPY[RESPONSIBLE_OFFICER_TYPES.CLIENTID]}`)
