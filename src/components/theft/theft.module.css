@@ -67,6 +67,20 @@
     color: white;
 }
 
+.thefts_empty {
+    --heightA: 250px;
+    height: calc(100vh - var(--heightA));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thefts_empty p {
+    margin: 0;
+    font-size: 45px;
+    text-align: center;
+}
+
 @media screen and (max-width: 678px) {
     .theft div span {
         font-size: 18px;

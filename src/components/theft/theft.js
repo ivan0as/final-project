@@ -3,7 +3,7 @@ import { Switch, Route, Link } from 'react-router-dom';
 import { UserContext } from '../../context';
 import { request } from '../../requests';
 import { THEFT_REPORT_TYPES } from '../../config';
-import { formatDate } from '../../utils'
+import { formatDate, isEmpty } from '../../utils'
 import Loading from '../loading';
 import TheftDetail from '../theft-detail';
 import AuthorizationFailed from '../authorization-failed';
@@ -16,7 +16,8 @@ export default function Theft() {
 
     const [dataLoading, setDataLoading] = useState(false)
 
-    
+    const [theftsEmpty, setTheftsEmpty] =useState(false)
+
     const requestThefts = () => {
         const method = 'get'
       
@@ -80,6 +81,10 @@ export default function Theft() {
         setThefts((prev) => prev.filter(theft => theft._id !== id))
     }
 
+    useEffect(()=> {
+        setTheftsEmpty(isEmpty(thefts))
+    }, [thefts])
+
     return (
         <div>
             {authorization
@@ -88,21 +93,29 @@ export default function Theft() {
                             <div className={css.thefts}>
                                 {dataLoading
                                     ?   <div>
-                                            {thefts.map( theft => {
-                                                return(
-                                                    <div className={css.theft} key={theft._id}>
-                                                        <Link to ={`/theft/${theft._id}`}>
-                                                            <div>
-                                                                <span>{theft[THEFT_REPORT_TYPES.LICENSENUMBER]}</span>
-                                                                <span className={css.theft_type}>{theft[THEFT_REPORT_TYPES.TYPE]}</span>
-                                                                <span>{theft[THEFT_REPORT_TYPES.OWNERFULLNAME]}</span>
-                                                                <span>{theft[THEFT_REPORT_TYPES.DATE]}</span>
-                                                            </div>
-                                                        </Link>
-                                                        <button onClick={() => handleClick(theft._id)}><span>x</span></button>
+                                            {theftsEmpty
+                                                ?   <>
+                                                        {thefts.map( theft => {
+                                                            return(
+                                                                <div className={css.theft} key={theft._id}>
+                                                                    <Link to ={`/theft/${theft._id}`}>
+                                                                        <div>
+                                                                            <span>{theft[THEFT_REPORT_TYPES.LICENSENUMBER]}</span>
+                                                                            <span className={css.theft_type}>{theft[THEFT_REPORT_TYPES.TYPE]}</span>
+                                                                            <span>{theft[THEFT_REPORT_TYPES.OWNERFULLNAME]}</span>
+                                                                            <span>{theft[THEFT_REPORT_TYPES.DATE]}</span>
+                                                                        </div>
+                                                                    </Link>
+                                                                    <button onClick={() => handleClick(theft._id)}><span>x</span></button>
+                                                                </div>
+                                                            )
+                                                        })}
+                                                    </>
+                                                :   <div className={css.thefts_empty}>
+                                                        <p>Сообщений о краже нет</p>
                                                     </div>
-                                                )
-                                            })}
+                                            }
+                                            
                                         </div>
                                     :   <Loading/>
                                 }
