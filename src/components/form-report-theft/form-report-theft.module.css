@@ -1,0 +1,57 @@
+.form {
+    border: solid;
+    border-radius: 10px;
+    border-color: #131313;
+    padding: 10px;
+}
+
+.h2 {
+    font-size: 35px;
+    margin: 10px 0;
+}
+
+.div_input {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.div_input label {
+    margin-top: 15px;
+    font-size: 23px;
+}
+
+.div_input label input, .div_input label select {
+    margin-left: 10px;
+    font-family: 'Oswald', sans-serif;
+    width: 250px;
+    font-size: 20px;
+}
+
+.div_input textarea {
+    height: 70px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+
+.div_input button {
+    margin-top: 30px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    background: none;
+    cursor: pointer;
+    border: solid;
+    border-color: #131313;
+    border-radius: 10px;
+}
+
+.div_input button:hover {
+    background: #131313;
+    color: white;
+}
+
+.loading {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}

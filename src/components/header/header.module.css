@@ -1,0 +1,48 @@
+.header {
+    background: #131313;
+    height: 85px;
+}
+
+.header_content {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    padding: 10px;
+    padding-top: 0;
+}
+
+.h1 {
+    margin: 0;
+    margin-top: 21px;
+}
+
+.user_menu {
+    margin-top: 30px;
+    font-size: 22px;
+}
+
+.user_menu span:first-child {
+    margin-right: 10px;
+}
+
+.user_menu button {
+    background: none;
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    border: 3px solid;
+    border-color: #131313;
+}
+
+.user_menu button:hover {
+    border-bottom-color: white;
+}
+
+@media screen and (max-width: 678px) {
+    .email, .slash {
+        display: none;
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "officers": [
+        {
+            "_id": "61dfffcb1e1086514ba00be7",
+            "email": "vanyaastanaev1@gmail.com",
+            "firstName": "Иван",
+            "lastName": "А",
+            "password": "$2b$08$XkpsQJ09y6ilE6PlPEYXZe0oM401.53CN5lTW3R/SVu3U/Ef0bayO",
+            "clientId": "a9506be4-ff5f-49f8-bea8-f9b25c79cf54",
+            "approved": true,
+            "__v": 0
+        },
+        {
+            "_id": "61ed26fd9fa364dd2a307416",
+            "email": "cat@mail.ru",
+            "firstName": null,
+            "lastName": null,
+            "password": "$2b$08$NPBrjMmRxHebcES5/Sat/u9U71uHSTKoX/wSeiXJ9d5YsPiC9ui1W",
+            "clientId": "a9506be4-ff5f-49f8-bea8-f9b25c79cf54",
+            "approved": false,
+            "__v": 0
+        }
+    ]
+}

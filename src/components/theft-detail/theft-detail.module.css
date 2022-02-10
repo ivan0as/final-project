@@ -1,0 +1,67 @@
+.data_theft {
+    font-size: 35px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.unchanged_data {
+    margin: 0;
+    margin-top: 15px;
+}
+
+.unchanged_data span {
+    margin-left: 15px;
+}
+
+.editable_data {
+    display: flex;
+    flex-direction: column;
+}
+
+.editable_data label {
+    margin-top: 15px;
+}
+
+.editable_data label select, .editable_data label input {
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    margin-left: 15px;
+}
+
+.editable_data textarea {
+    height: 70px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+}
+
+.submit {
+    background: none;
+    cursor: pointer;
+    border: solid;
+    border-color: #131313;
+    border-radius: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    margin-top: 25px;
+}
+
+.submit:hover {
+    background: #131313;
+    color: white;
+}
+
+.loading {
+    text-align: center;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 678px) {
+    .data_theft {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .editable_data label select, .editable_data label input, .editable_data textarea {
+        font-size: 15px;
+    }
+}

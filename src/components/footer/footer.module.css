@@ -1,0 +1,19 @@
+.footer {
+    background-color: #131313;
+    height: 55px;
+}
+
+.footer_content{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    padding-top: 0;
+}
+
+.footer_content p{
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    margin-top: 13px;
+}

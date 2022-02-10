@@ -1,0 +1,13 @@
+.authorization_failed {
+    --heightA: 250px;
+    height: calc(100vh - var(--heightA));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.authorization_failed p {
+    margin: 0;
+    font-size: 45px;
+    text-align: center;
+}

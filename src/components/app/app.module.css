@@ -1,0 +1,17 @@
+.app {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container {
+    max-width: 1235px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 678px) {
+    .container {
+        max-width: 678px;
+    }
+}

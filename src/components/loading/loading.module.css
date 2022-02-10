@@ -1,0 +1,21 @@
+.loading {
+    --heightA: 238px;
+    height: calc(100vh - var(--heightA));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes rotate {
+	to { transform: rotate(360deg); }
+}
+
+.loading img {
+    animation: rotate 2s infinite linear;
+}
+
+@media screen and (max-width: 678px) {
+    .loading img {
+        width: 350px;
+    }
+}

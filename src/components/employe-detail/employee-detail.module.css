@@ -1,0 +1,90 @@
+.data_employee {
+    font-size: 35px;
+    margin-top: 50px;
+}
+
+.unchanged_data {
+    margin: 0;
+    margin-top: 15px;
+}
+
+.unchanged_data span {
+    margin-left: 15px;
+}
+
+.editable_data {
+    display: flex;
+    flex-direction: column;
+}
+
+.editable_data label {
+    margin-top: 15px;
+}
+
+.editable_data label input {
+    margin-left: 15px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+}
+
+.label_checkbox {
+    line-height: 21px;
+}
+
+.approved {
+    display: none;
+}
+
+.fake {
+    margin-left: 10px;
+    display: inline-flex;
+    font-size: 25px;
+    width: 25px;
+    height: 25px;
+    background: #131313;
+    color: white;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.fake::before {
+    content:"\2714";
+    opacity: 0;
+    transition: .2s;
+}
+
+.approved:checked + .fake::before {
+    opacity: 1;
+}
+
+.submit {
+    background: none;
+    cursor: pointer;
+    border: solid;
+    border-color: #131313;
+    border-radius: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    margin-top: 25px;
+}
+
+.submit:hover {
+    background: #131313;
+    color: white;
+}
+
+.loading {
+    text-align: center;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 678px) {
+    .data_employee {
+        font-size: 20px;
+    }
+
+    .editable_data label input {
+        font-size: 18px;
+    }
+}

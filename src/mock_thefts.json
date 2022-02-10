@@ -1,0 +1,53 @@
+{
+    "status": "OK",
+    "data": [
+        {
+            "_id": "61ea8fa9d91c59d4105e7d18",
+            "status": "new",
+            "licenseNumber": "56y34gwrtgrt",
+            "type": "sport",
+            "ownerFullName": "John Doe",
+            "clientId": "a9506be4-ff5f-49f8-bea8-f9b25c79cf54",
+            "createdAt": "2022-01-21T10:49:13.029Z",
+            "updatedAt": null,
+            "color": null,
+            "date": null,
+            "officer": null,
+            "description": null,
+            "resolution": null,
+            "__v": 0
+        },
+        {
+            "_id": "61ea9064d91c59d4105e7d20",
+            "status": "new",
+            "licenseNumber": "16y3436gdfhgjt",
+            "type": "general",
+            "ownerFullName": "Name",
+            "clientId": "a9506be4-ff5f-49f8-bea8-f9b25c79cf54",
+            "createdAt": "2022-01-21T10:52:20.382Z",
+            "updatedAt": null,
+            "color": null,
+            "date": null,
+            "officer": null,
+            "description": null,
+            "resolution": null,
+            "__v": 0
+        },
+        {
+            "_id": "61ea90b8d91c59d4105e7d25",
+            "status": "new",
+            "licenseNumber": "93fhfgssd41fgfhg",
+            "type": "general",
+            "ownerFullName": "Leonardo DiCaprio",
+            "clientId": "a9506be4-ff5f-49f8-bea8-f9b25c79cf54",
+            "createdAt": "2022-01-21T10:53:44.771Z",
+            "updatedAt": null,
+            "color": null,
+            "date": null,
+            "officer": null,
+            "description": null,
+            "resolution": null,
+            "__v": 0
+        }
+    ]
+}
